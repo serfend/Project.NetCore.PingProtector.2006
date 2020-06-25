@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj": {}
+    "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj": {
+    "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj",
         "projectName": "PingProtector.DAL",
-        "projectPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj",
+        "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj",
         "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\obj\\",
+        "outputPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -1,8 +1,4 @@
-﻿using NETworkManager.Models.Network;
-using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Text;
+﻿using System;
 
 namespace PingProtector.BLL.Network.NetworkChangedDetector
 {

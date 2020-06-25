@@ -1,7 +1,6 @@
+using NETworkManager.Settings;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Project.Core.Protector
@@ -17,7 +16,12 @@ namespace Project.Core.Protector
 			Application.SetHighDpiMode(HighDpiMode.SystemAware);
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FrmMain());
+			if (!AutostartManager.IsEnabled) AutostartManager.EnableAsync();
+			var main = new Main();
+			while (true)
+			{
+				Thread.Sleep(1000);
+			};
 		}
 	}
 }

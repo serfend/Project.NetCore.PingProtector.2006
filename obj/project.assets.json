@@ -2566,11 +2566,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\Project.Core.Protector.csproj",
+      "projectUniqueName": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\Project.Core.Protector.csproj",
       "projectName": "Project.Core.Protector",
-      "projectPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\Project.Core.Protector.csproj",
+      "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\Project.Core.Protector.csproj",
       "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\obj\\",
+      "outputPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -2591,14 +2591,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\huawei\\Documents\\github\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\huawei\\Documents\\github\\Common\\Common.csproj"
+            "C:\\Users\\huawei\\Documents\\GitHub\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Common\\Common.csproj"
             },
-            "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj": {
-              "projectPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj"
+            "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj": {
+              "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj"
             },
-            "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj": {
-              "projectPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj"
+            "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj": {
+              "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj"
             }
           }
         }

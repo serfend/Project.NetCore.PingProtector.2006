@@ -1,8 +1,6 @@
 ﻿using DotNet4.Utilities.UtilReg;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Project.Core.Protector.BLL.Record
 {

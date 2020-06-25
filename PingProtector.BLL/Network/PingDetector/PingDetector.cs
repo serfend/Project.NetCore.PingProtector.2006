@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Project.Core.Protector.BLL.Network.PingDetector
 {

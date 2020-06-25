@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Core.Protector", "Project.Core.Protector.csproj", "{FC988382-CDFE-4166-9239-1FDCEF0FEC0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingProtector.BLL", "PingProtector.BLL\PingProtector.BLL.csproj", "{C8E2D0CB-F2DE-4821-8889-C442BF034093}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PingProtector.BLL", "PingProtector.BLL\PingProtector.BLL.csproj", "{C8E2D0CB-F2DE-4821-8889-C442BF034093}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\Common\Common.csproj", "{858CEFED-E271-4DE9-9525-3B1487D48A07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "..\Common\Common.csproj", "{858CEFED-E271-4DE9-9525-3B1487D48A07}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PingProtector.DAL", "PingProtector.DAL\PingProtector.DAL.csproj", "{F9192B2F-8A43-4D7B-9768-7C93DA2D9C82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration", "Configuration\Configuration.csproj", "{C057E1C8-F826-4759-8931-EC0323F69C66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F9192B2F-8A43-4D7B-9768-7C93DA2D9C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9192B2F-8A43-4D7B-9768-7C93DA2D9C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9192B2F-8A43-4D7B-9768-7C93DA2D9C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C057E1C8-F826-4759-8931-EC0323F69C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C057E1C8-F826-4759-8931-EC0323F69C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C057E1C8-F826-4759-8931-EC0323F69C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C057E1C8-F826-4759-8931-EC0323F69C66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

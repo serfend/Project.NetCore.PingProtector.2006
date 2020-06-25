@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\Project.Core.Protector.csproj": {}
+    "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\Project.Core.Protector.csproj": {}
   },
   "projects": {
-    "C:\\Users\\huawei\\Documents\\github\\Common\\Common.csproj": {
+    "C:\\Users\\huawei\\Documents\\GitHub\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huawei\\Documents\\github\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\huawei\\Documents\\GitHub\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\huawei\\Documents\\github\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huawei\\Documents\\github\\Common\\obj\\",
+        "outputPath": "C:\\Users\\huawei\\Documents\\GitHub\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj": {
+    "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj",
         "projectName": "PingProtector.BLL",
-        "projectPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj",
+        "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj",
         "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\obj\\",
+        "outputPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -95,11 +95,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\huawei\\Documents\\github\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\huawei\\Documents\\github\\Common\\Common.csproj"
+              "C:\\Users\\huawei\\Documents\\GitHub\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Common\\Common.csproj"
               },
-              "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj": {
-                "projectPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj"
+              "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj": {
+                "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj"
               }
             }
           }
@@ -137,14 +137,14 @@
         }
       }
     },
-    "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj": {
+    "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj",
         "projectName": "PingProtector.DAL",
-        "projectPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj",
+        "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj",
         "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\obj\\",
+        "outputPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -194,14 +194,14 @@
         }
       }
     },
-    "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\Project.Core.Protector.csproj": {
+    "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\Project.Core.Protector.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\Project.Core.Protector.csproj",
+        "projectUniqueName": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\Project.Core.Protector.csproj",
         "projectName": "Project.Core.Protector",
-        "projectPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\Project.Core.Protector.csproj",
+        "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\Project.Core.Protector.csproj",
         "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\obj\\",
+        "outputPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -222,14 +222,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\huawei\\Documents\\github\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\huawei\\Documents\\github\\Common\\Common.csproj"
+              "C:\\Users\\huawei\\Documents\\GitHub\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Common\\Common.csproj"
               },
-              "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj": {
-                "projectPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj"
+              "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj": {
+                "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.BLL\\PingProtector.BLL.csproj"
               },
-              "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj": {
-                "projectPath": "C:\\Users\\huawei\\Documents\\github\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj"
+              "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj": {
+                "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\Project.NetCore.PingProtector.2006\\PingProtector.DAL\\PingProtector.DAL.csproj"
               }
             }
           }

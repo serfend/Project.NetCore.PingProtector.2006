@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net.NetworkInformation;
-using System.Text;
 
 namespace Project.Core.Protector.BLL.Network.PingDetector
 {

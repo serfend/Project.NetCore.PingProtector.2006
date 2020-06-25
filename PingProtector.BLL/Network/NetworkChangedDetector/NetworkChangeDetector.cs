@@ -1,12 +1,10 @@
 ﻿using NETworkManager.Models.Network;
 using PingProtector.BLL.Network.NetworkChangedDetector;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
-using System.Text;
 using System.Threading.Tasks;
 using NetworkInterface = NETworkManager.Models.Network.NetworkInterface;
 using Ping = System.Net.NetworkInformation.Ping;
@@ -31,6 +29,11 @@ namespace Project.Core.Protector.BLL.Network.NetworkChangedDetector
 			NetworkChange.NetworkAddressChanged += (sender, args) => CheckConnectionAsync();
 			OuterIp = outerIp;
 			InnerIp = innerIp;
+			Task.Run(() =>
+			{
+				Task.Delay(2000);
+				CheckConnection();
+			});
 		}
 
 		#region method
