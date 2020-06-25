@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Project.Core.Protector.BLL.Network
+namespace Project.Core.Protector.BLL.Network.PingDetector
 {
 	public class PingDetector : IDisposable
 	{
@@ -25,23 +25,18 @@ namespace Project.Core.Protector.BLL.Network
 		/// <summary>
 		/// if set , it would raise event while ping success
 		/// </summary>
-		public int CheckInterval
+		public double CheckInterval
 		{
+			get => timer.Interval;
 			set
 			{
-				if (value <= 0)
-				{
-					timer.Enabled = false;
-					return;
-				}
 				timer.Interval = value;
-				timer.Enabled = true;
+				if (!timer.Enabled && value >= 0) timer.Start();
+				else if (value <= 0) timer.Stop();
 			}
 		}
 
-		public event PingSuccess OnPingReply;
-
-		public delegate void PingSuccess(PingReply status);
+		public event EventHandler<PingSuccessEventArgs> OnPingReply;
 
 		public PingDetector(PingOptions options = null, string host = null)
 		{
@@ -54,25 +49,25 @@ namespace Project.Core.Protector.BLL.Network
 			};
 			this.options = options;
 			Host = host;
-			timer = new System.Windows.Forms.Timer()
+			timer = new System.Timers.Timer()
 			{
 				Enabled = false,
 			};
-			timer.Tick += Timer_Tick;
+			timer.Elapsed += Timer_Elapsed; ;
 		}
 
-		private void Timer_Tick(object sender, EventArgs e)
+		private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
 		{
 			Check();
 		}
 
-		public System.Windows.Forms.Timer timer;
+		public System.Timers.Timer timer;
 
 		public PingReply Check(string host = null, int timeout = 3000)
 		{
 			if (host == null) host = Host;
 			var result = Ping.Send(host, timeout, buffer, options);
-			if (result.Status == IPStatus.Success) OnPingReply(result);
+			if (result.Status == IPStatus.Success) OnPingReply?.Invoke(this, new PingSuccessEventArgs(result));
 			return result;
 		}
 

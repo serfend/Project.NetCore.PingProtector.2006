@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.csproj" />
+    <ProjectReference Include="..\PingProtector.DAL\PingProtector.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NETworkManager.Models">
+      <HintPath>..\..\NETworkManager\Source\NETworkManager.Models\bin\Debug\NETworkManager.Models.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

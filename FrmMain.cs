@@ -2,6 +2,8 @@
 using DotNet4.Utilities.UtilReg;
 using Newtonsoft.Json;
 using Project.Core.Protector.BLL.Network;
+using Project.Core.Protector.BLL.Network.NetworkChangedDetector;
+using Project.Core.Protector.BLL.Network.PingDetector;
 using Project.Core.Protector.BLL.Record;
 using System;
 using System.Collections.Generic;
@@ -21,10 +23,9 @@ namespace Project.Core.Protector
 		private static readonly string outerHost = "serfend.top";
 		private static readonly string outerIp = "39.97.229.104";
 		private static readonly string innerHost = "192.168.8.8";
-		private readonly PingDetector pingDetectorOuter = new PingDetector(null, outerHost);
-		private readonly PingDetector pingDetectorInner = new PingDetector(null, innerHost);
 		private readonly Reporter reporter = new Reporter();
 		private readonly BLL.Record.PingSuccessRecord pingSuccessRecord = new BLL.Record.PingSuccessRecord();
+		private readonly NetworkChangeDetector networkChangeDetector = new NetworkChangeDetector(outerIp, innerHost);
 		public Reg Setting = new Reg().In("setting");
 		private bool isOuterConnected = false;
 
@@ -47,24 +48,24 @@ namespace Project.Core.Protector
 		public FrmMain()
 		{
 			InitializeComponent();
-			pingDetectorOuter.OnPingReply += PingDetectorInner_OnPingReply;
-			pingDetectorOuter.CheckInterval = 10000;
-			pingDetectorInner.OnPingReply += PingDetectorInner_OnPingReply;
-			pingDetectorInner.CheckInterval = 10000;
+			networkChangeDetector.OnNetWorkChange += NetworkChangeDetector_OnNetWorkChange;
 		}
 
-		private void PingDetectorInner_OnPingReply(PingReply status)
+		private void NetworkChangeDetector_OnNetWorkChange(object sender, PingProtector.BLL.Network.NetworkChangedDetector.NetworkChangeArgs e)
 		{
+			var s = e.Status;
+			Console.WriteLine(JsonConvert.SerializeObject(s));
+			if (s.Type != PingProtector.BLL.Network.NetworkChangedDetector.NetType.Internet || s.Log <= 0) return;
 			this.Invoke((EventHandler)delegate
 			{
 				var r = new DAL.Record.Record()
 				{
 					Create = DateTime.Now,
-					TargetIp = status.Address.ToString()
+					TargetIp = s.IPAddress?.ToString()
 				};
-				var info = $"{r.TargetIp}@{status.RoundtripTime}ms";
+				var info = $"{r.TargetIp}@{s.Log}ms";
 				this.OpInfo.Items.Insert(0, new ListViewItem(new string[] { r.Create.ToString(), info }));
-				var successOuter = status.Address.ToString() == outerIp;
+				var successOuter = s.IPAddress.ToString() == outerIp;
 				if (successOuter != IsOuterConnected)
 				{
 					pingSuccessRecord.SaveRecord(r);
